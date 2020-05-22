@@ -8,7 +8,7 @@
         <!-- modify the Title and PageName-->
         <pnp:ClientSidePage PromoteAsTemplate="true" Title="Page template with org banner" PageName="Templates/Page-template-with-org-banner.aspx" PromoteAsNewsArticle="false" Overwrite="true" ThumbnailUrl="">
           <!-- modify the image URL to point to your asset site library file -->
-          <pnp:Header ServerRelativeImageUrl="/sites/YourAssetSite/Shared Documents/Images/banner.jpg" Type="Custom" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
+          <pnp:Header ServerRelativeImageUrl="/sites/YourAssetSite/Shared Documents/Images/banner.png" Type="Custom" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <!-- update the rest of your layout and content -->
           <pnp:Sections>
             <pnp:Section Order="1" Type="OneColumn" />
