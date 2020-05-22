@@ -1,0 +1,15 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.21.2005.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-PAGE-TEMPLATE-BANNER">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-PAGE-TEMPLATE-BANNER" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+     <pnp:Files>
+
+        <!-- Update the Folder with the library name/folder path on the image asset site -->
+        <!-- For example, if your image asset library is at https://yourtenant.sharepoint.com/sites/orgassets/shared/images, Folder="shared/images" -->
+        <pnp:Directory Src="images" Folder="assetLibrary/assetFolder" Overwrite="true" Recursive="true" Level="Published" />
+
+        </pnp:Files>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>

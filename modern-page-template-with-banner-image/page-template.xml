@@ -1,0 +1,23 @@
+<?xml version="1.0"?>
+<pnp:Provisioning xmlns:pnp="http://schemas.dev.office.com/PnP/2020/02/ProvisioningSchema">
+  <pnp:Preferences Generator="OfficeDevPnP.Core, Version=3.21.2005.0, Culture=neutral, PublicKeyToken=5e633289e95c321a" />
+  <pnp:Templates ID="CONTAINER-TEMPLATE-PAGE-TEMPLATE-WITH-BANNER">
+    <pnp:ProvisioningTemplate ID="TEMPLATE-PAGE-TEMPLATE-WITH-BANNER" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
+      <pnp:ClientSidePages>
+        <!-- start clientsidepage for page template -->
+        <!-- modify the Title and PageName-->
+        <pnp:ClientSidePage PromoteAsTemplate="true" Title="Page template with org banner" PageName="Templates/Page-template-with-org-banner.aspx" PromoteAsNewsArticle="false" Overwrite="true" ThumbnailUrl="">
+          <!-- modify the image URL to point to your asset site library file -->
+          <pnp:Header ServerRelativeImageUrl="/sites/YourAssetSite/Shared Documents/Images/banner.jpg" Type="Custom" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
+          <!-- update the rest of your layout and content -->
+          <pnp:Sections>
+            <pnp:Section Order="1" Type="OneColumn" />
+            <pnp:Section Order="2" Type="TwoColumn" />
+            <pnp:Section Order="3" Type="OneColumn" />
+          </pnp:Sections>
+        </pnp:ClientSidePage>
+        <!-- end clientsidepage -->
+      </pnp:ClientSidePages>
+    </pnp:ProvisioningTemplate>
+  </pnp:Templates>
+</pnp:Provisioning>
