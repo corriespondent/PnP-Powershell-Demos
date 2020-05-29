@@ -5,8 +5,14 @@
     <pnp:ProvisioningTemplate ID="TEMPLATE-PAGE-TEMPLATE-WITH-BANNER" Version="1" BaseSiteTemplate="SITEPAGEPUBLISHING#0" Scope="RootSite">
       <pnp:ClientSidePages>
         <!-- start clientsidepage for page template -->
-        <!-- modify the Title and PageName-->
-        <pnp:ClientSidePage PromoteAsTemplate="true" Title="Page template with org banner" PageName="Templates/Page-template-with-org-banner.aspx" PromoteAsNewsArticle="false" Overwrite="true" ThumbnailUrl="">
+        <!-- modify the Title and PageName and modify the Thumbnail to point to your asset site library file-->
+        <pnp:ClientSidePage 
+          PromoteAsTemplate="true" 
+          Title="Page template with org banner" 
+          PageName="Templates/Page-template-with-org-banner.aspx" 
+          ThumbnailUrl="/sites/YourAssetSite/Shared Documents/Images/banner.png" 
+          PromoteAsNewsArticle="false" 
+          Overwrite="true">
           <!-- modify the image URL to point to your asset site library file -->
           <pnp:Header ServerRelativeImageUrl="/sites/YourAssetSite/Shared Documents/Images/banner.png" Type="Custom" LayoutType="FullWidthImage" TextAlignment="Center" ShowTopicHeader="false" ShowPublishDate="false" TopicHeader="" AlternativeText="" />
           <!-- update the rest of your layout and content -->
